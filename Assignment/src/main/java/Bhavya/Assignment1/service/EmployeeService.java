@@ -54,8 +54,9 @@ public class EmployeeService {
     public List<EmployeeModel> readEmployee(){
         List<EmployeeModel> employees = new ArrayList<>();
         List<Employee> employeeList = new ArrayList<>();
-        try {
-            employeeList = employeeRepository.findAll(); //Fetch all the Students from the database.
+        try
+        {
+            employeeList = employeeRepository.findAll();
         }catch (Exception e){
             throw e;
         }
